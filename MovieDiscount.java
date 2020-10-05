@@ -15,7 +15,7 @@ public class MovieDiscount {
         // Ask the user for the side lengths
         System.err.print("How old are you? ");
         int age = input.nextInt();
-        double originalCost = 14.5;
+        double cost = 14.5;
 
         // Ask the user if they have a coupon
         System.err.print("Do you have a coupon? [true/false] ");
@@ -23,23 +23,27 @@ public class MovieDiscount {
        
         // Read in a true/false value
         if (age < 13 || age >= 65) {
-        	System.out.println("Your ticket costs $11.5.");}
-        	else {
-        		System.out.println("Your ticket costs $14.5.");
-        	}
+        	System.out.println("Your ticket costs $11.5.");
+         {
+        	System.out.println("Your ticket costs $14.5.");
         	
         if (hasCoupon == true) {
-        	double newCost = originalCost - 2;
-        	System.out.println("Your ticket costs " + newCost);
-         	}
+        cost = cost - 2;
+        System.out.println("Your ticket costs " + cost);}
+        	
         else {
         	System.out.println("Your ticket costs $14.5.");
-        }
-     
-       
         
-       // Print the cost of a movie ticket
-       
-        // Figure out the cost and print it
+      
+        }if (hasCoupon == true) {
+        	cost = cost - 2;
+        	System.out.println("Your ticket costs " + cost);
+        	}
+        else {
+        	System.out.println("Your ticket costs $14.5.");}
+        	
+      }
     }
+  }
 }
+        
