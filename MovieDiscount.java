@@ -23,27 +23,21 @@ public class MovieDiscount {
        
         // Read in a true/false value
         if (age < 13 || age >= 65) {
-        	System.out.println("Your ticket costs $11.5.");
-         {
-        	System.out.println("Your ticket costs $14.5.");
-        	
-        if (hasCoupon == true) {
-        cost = cost - 2;
-        System.out.println("Your ticket costs " + cost);}
-        	
-        else {
-        	System.out.println("Your ticket costs $14.5.");
-        
-      
-        }if (hasCoupon == true) {
+        	System.out.println("Your ticket costs $11.5.");}
+        	if (hasCoupon == true) {
+        		cost = cost - 2;
+        		System.out.println("Your ticket costs " + cost);}
+        	else {
+        		System.out.println("Your ticket costs $14.5.");
+       }if (hasCoupon == true) {
         	cost = cost - 2;
         	System.out.println("Your ticket costs " + cost);
         	}
-        else {
-        	System.out.println("Your ticket costs $14.5.");}
+       else {
+    	   System.out.println("Your ticket costs $14.5.");
         	
       }
     }
   }
-}
+
         
